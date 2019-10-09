@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <ApodContainer data={apod}/>
+        <ApodContainer data={apod.data}/>
       </div>
     </div>
   );
