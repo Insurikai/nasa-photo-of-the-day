@@ -6,7 +6,7 @@ import ApodContainer from "./components/ApodContainer";
 function App() {
   const [apod, setApod] = useState({});
   useEffect(()=>{
-    Axios.get()
+    Axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     .then(response=>{
       setApod(response);
     })
