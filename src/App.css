@@ -40,6 +40,7 @@ body{background: #111; color: white;}
     display: flex;
     justify-content: space-evenly;
     align-content: space-around;
+    flex-wrap: wrap;
 }
 .apod-container{
     width: 40vw;
