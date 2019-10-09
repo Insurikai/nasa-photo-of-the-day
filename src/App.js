@@ -5,8 +5,14 @@ import "./App.css";
 function App() {
   const [apod, setApod] = useState({});
   useEffect(()=>{
-    
-  });
+    Axios.get()
+    .then(response=>{
+      setApod(response);
+    })
+    .catch(error=>{
+      console.log(error);
+    })
+  },[]);
   return (
     <div className="App">
       <p>
