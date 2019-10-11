@@ -1,5 +1,12 @@
 import React from "react";
+import styled from 'styled-components'
 
 export default function Title(props){
-    return ( <h1 className="title">{props.title}</h1> )
+    const Styled = styled.h1`
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-top: 10px;
+        color: moccasin;
+    `;
+    return (<Styled>{props.title}</Styled>);
 }
